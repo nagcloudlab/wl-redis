@@ -22,15 +22,21 @@ public class DemoServiceApplication {
 		// count++;
 		// reqCount = Integer.toString(count);
 		// return "Hello from Demo Service. Request Count: " + reqCount;
-		String reqCount = redisTemplate.opsForValue().get("reqCount"); // read // GET reqCount
-		if (reqCount == null) {
-			reqCount = "0";
-		}
-		int count = Integer.parseInt(reqCount);
-		count++;
-		reqCount = Integer.toString(count);
-		redisTemplate.opsForValue().set("reqCount", reqCount); // Write // SET reqCount value
+		
+		// String reqCount = redisTemplate.opsForValue().get("reqCount"); // read // GET reqCount
+		// if (reqCount == null) {
+		// 	reqCount = "0";
+		// }
+		// int count = Integer.parseInt(reqCount);
+		// count++;
+		// reqCount = Integer.toString(count);
+		// redisTemplate.opsForValue().set("reqCount", reqCount); // Write // SET reqCount value
+		// return "Hello from Demo Service. Request Count: " + reqCount;
+
+		// INCR reqCount
+		String reqCount = redisTemplate.opsForValue().increment("reqCount", 1).toString();
 		return "Hello from Demo Service. Request Count: " + reqCount;
+
 	}
 
 	public static void main(String[] args) {
