@@ -62,7 +62,7 @@ redis-server redis.conf
 
 # 3. Create the Redis cluster
 
-redis-cli --cluster create 127.0.0.1:7000 127.0.0.1:7001 \
+redis-cli --tls --cacert /Users/nag/wl-redis/tls/ca.crt --cert /Users/nag/wl-redis/tls/redis-client.crt --key /Users/nag/wl-redis/tls/redis-client.key --cluster create 127.0.0.1:7000 127.0.0.1:7001 \
 127.0.0.1:7002 127.0.0.1:7003 127.0.0.1:7004 127.0.0.1:7005 \
 --cluster-replicas 1
 

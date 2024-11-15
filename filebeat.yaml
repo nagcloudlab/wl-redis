@@ -1,0 +1,10 @@
+filebeat.inputs:
+  - type: log
+    paths:
+      - /Users/nag/wl-redis/6379/redis.log
+    fields:
+      service: redis
+    fields_under_root: true
+
+output.elasticsearch:
+  hosts: ["localhost:9200"]

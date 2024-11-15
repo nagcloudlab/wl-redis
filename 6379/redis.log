@@ -1,0 +1,19 @@
+68522:C 15 Nov 2024 11:22:10.783 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+68522:C 15 Nov 2024 11:22:10.783 # Redis version=7.0.11, bits=64, commit=00000000, modified=0, pid=68522, just started
+68522:C 15 Nov 2024 11:22:10.783 # Configuration loaded
+68522:M 15 Nov 2024 11:22:10.784 * Increased maximum number of open files to 10032 (it was originally set to 256).
+68522:M 15 Nov 2024 11:22:10.784 * monotonic clock: POSIX clock_gettime
+68522:M 15 Nov 2024 11:22:10.785 * Running mode=standalone, port=6379.
+68522:M 15 Nov 2024 11:22:10.785 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
+68522:M 15 Nov 2024 11:22:10.785 # Server initialized
+68522:M 15 Nov 2024 11:22:10.785 * Loading RDB produced by version 7.0.11
+68522:M 15 Nov 2024 11:22:10.785 * RDB age 6 seconds
+68522:M 15 Nov 2024 11:22:10.786 * RDB memory usage when created 1.51 Mb
+68522:M 15 Nov 2024 11:22:10.786 * Done loading RDB, keys loaded: 6, keys expired: 0.
+68522:M 15 Nov 2024 11:22:10.786 * DB loaded from disk: 0.001 seconds
+68522:M 15 Nov 2024 11:22:10.786 * Ready to accept connections
+68522:signal-handler (1731650428) Received SIGINT scheduling shutdown...
+68522:M 15 Nov 2024 11:30:28.529 # User requested shutdown...
+68522:M 15 Nov 2024 11:30:28.529 * Saving the final RDB snapshot before exiting.
+68522:M 15 Nov 2024 11:30:28.546 * DB saved on disk
+68522:M 15 Nov 2024 11:30:28.546 # Redis is now ready to exit, bye bye...
